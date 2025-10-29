@@ -1196,18 +1196,20 @@
                                                     <div role="form" class="wpcf7" id="wpcf7-f238-o1" lang="en-US" dir="ltr">
                                                         <div class="screen-reader-response"></div>
 
-                                                        <form method="post" action="contactform/contactengine.php" class="forms-input">
+                                                        <form name="contact" method="POST" action="contactform/contactthanks.html" class="forms-input" data-netlify="true" netlify-honeypot="bot-field">
+                                                            <input type="hidden" name="form-name" value="contact" />
+                                                            <p hidden><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
                                                            
-                                                            <input placeholder="Name" type="text" name="Name" id="Name" />
+                                                            <input placeholder="Name" type="text" name="Name" id="Name" required />
                                                             
                                                            
                                                             <input placeholder="City" type="text" name="City" id="City" />
                                                 
                                                            
-                                                            <input placeholder="Email" type="text" name="Email" id="Email" />
+                                                            <input placeholder="Email" type="email" name="Email" id="Email" required />
                                                             
                                                            
-                                                            <textarea placeholder="Message" name="Message" rows="20" cols="20" id="Message"></textarea>
+                                                            <textarea placeholder="Message" name="Message" rows="20" cols="20" id="Message" required></textarea>
 
                                                             <input type="submit" name="submit" value="Send" class="submit-button" />
                                                         </form>

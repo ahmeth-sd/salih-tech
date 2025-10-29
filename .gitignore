@@ -1,0 +1,20 @@
+# IDE files
+.idea/
+*.iml
+.vscode/
+
+# Netlify
+.netlify/
+netlify-cli-install/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*~

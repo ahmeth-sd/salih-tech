@@ -1,0 +1,31 @@
+# Netlify configuration file
+[build]
+  # Directory to publish (the root directory in this case)
+  publish = "."
+  
+  # Build command (none needed for static site)
+  command = ""
+
+# Redirect rules (optional)
+[[redirects]]
+  from = "/contactform/contactengine.php"
+  to = "/contactform/contactthanks.html"
+  status = 301
+
+# Form settings
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = false
+  minify = false
+
+[build.processing.js]
+  bundle = false
+  minify = false
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
